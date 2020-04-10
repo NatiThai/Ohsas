@@ -1,0 +1,137 @@
+<!DOCTYPE html><!--16-->
+<html>
+<head>
+<style>
+body {
+  background-color: lightblue;
+}
+
+h1 {
+  color: rgb(8, 8, 8);
+  text-align: center;
+}
+
+p {
+  font-family: verdana;
+  font-size: 15px;
+  text-indent: 50px;
+}
+
+input[type="submit"]{
+    padding: 10px 25px 8px;
+    color: cornsilk;
+    background-color: darkblue;
+    text-shadow: 0 1px 0 rgba(0,0,0,25);
+    font-size: 16px;
+    box-shadow:rgba(255, 255, 255, .25) 0 2px 0 0 inset darkgray;
+    border: 1px solid #024978;
+    border-radius: 2px;
+    margin-top: 10px;
+    cursor: pointer;
+    
+}
+button{
+    color: black;
+    background-color: yellow;
+}
+
+</style>
+</head>
+<body>
+<h1>Functions</h1>
+<p>เรามาต่อกันที่ฟังก์ชันกันเลยนะครับ  (Function) คือส่วนของโค้ดหรือโปรแกรมที่ทำงานเพื่อวัตถุประสงค์บางอย่าง ในภาษา Python คุณสามารถสร้างฟังก์ชันของ<br>
+  คุณเองเพื่อให้ทำงานที่ต้องการในรูปแบบของการประกาศฟังก์ชันในภาษา Python นั้นจะใช้คำสั่ง def และหลังจากนั้น function_name เป็น         <br>                                               
+  ชื่อของฟังก์ชัน และในวงเล็บ () เป็นการกำหนดพารามิเตอร์ของฟังก์ชัน พารามิเตอร์ของฟังก์ชันนั้นสามารถมีจำนวนเท่าไหร่ก็ได้หรือไม่มีก็ได้ <br>
+  ฟังก์ชันอาจจะมีหรือไม่มีการส่งค่ากลับ(return)ก็ได้    <br>                                                    
+  <br>
+  return หมายถึง การส่งค่ากลับที่ส่งกลับมาให้ฟังก์ชัน       <br>                                                                                                     
+  Parameter หมายถึง ตัวแปรที่กำหนดขึ้นมาเพื่อรองรับค่าของ Arguments ที่จะส่งมาให้กับ Method   <br>                                                     
+  Arguments หมายถึง ค่าคงที่หรือตัวแปรต่างๆ ที่เราจะส่งไปให้ Method ที่มีการรับพารามิเตอร์    <br>
+  <br>
+  โครงสร้างฟังก์ชันคือ<br>
+  def function_name(parameters):   <br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;statement(s)<br>
+            <br>
+            <br>                                     
+  มาดูตัวอย่างแบบไม่มี Parameter กันเลย         <br>                                               
+  def Test():<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("Hello Python")    <br>
+      <br>
+  Test()                 #<<< เป็นการเรียกใช้ฟังก์ชัน Test    <br>
+  ผลรันจะได้    Hello Python          <br>                                                                       
+  เป็นการประกาศ Function ชื่อว่า Test และไม่มีพารามิเตอร์ ใน Function มีคำสั่ง print ซึ่งจะแสดงค่าออกทางหน้าจอ  <br>                                                      
+  เวลาเรียกใช้ Function ก็แค่พิมพ์ชื่อ Function ก็คือ Test() นั้นเอง    <br>                                                    
+  <br>                             
+  ตัวอย่างแบบมี  Parameter         <br>                                             
+  def Test2(a, b):              <br>                                          
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print(a+b)  <br>
+      <br>
+  Test2(12,45)      #เมื่อฟังก์มี parameters(ตัวรับ) ก็ต้องมี   Arguments(ตัวส่ง)    ในที่นี้คือส่งค่า 12 กับ 45 ให้ฟังก์ขัน Test2  <br>                                                  
+  ผลรันจะได้   57         <br>                                                                                                  
+  <br>                                       
+  ตัวอย่างที่มีการ  return  ค่า          <br>                                                                                               
+  def Test3(a,b):<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;c = a+b<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return c   <br>
+      <br>
+  a = Test3(2,3)     #Test3 จะนำค่า c เข้าไปเก็บใน a<br>
+  print(a)                      <br>                                  
+  </p>    <br>
+  ลองทำดูหน่อยสิครับ<br>
+ทำยังไงให้ผลลัพธ์ออกมาเป็น Hello!<br>
+def a(x): <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;&nbsp;<p1><input type="text" id="name" name="fname" value="" size = "5" style="text-align: center;"></p1>  > 0: <br>     
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return "Hello!"  <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else:   <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return 0<br>
+printt(<p1><input type="text" id="name2" name="fname" value="" size = "5" style="text-align: center;"></p1>(1))
+
+<br><br><br>
+ทำยังไงให้ผลลัพธ์ออกมาเป็น 0<br>
+def b(<p1><input type="text" id="name3" name="fname" value="" size = "5" style="text-align: center;"></p1>): <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if &nbsp;&nbsp;x <p1><input type="text" id="name4" name="fname" value="" size = "5" style="text-align: center;"></p1> 0:<br>      
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return "Hello!"<br>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else:   <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return 0<br>
+
+print(b(0))     <br><br>      
+ 
+        
+        <button onclick="myFunction()">Submit</button>    
+        <button onclick="myFunction2()">Show Answer</button> 
+        <br><p3 id = "check"></p3>   
+    
+        <script>
+            function myFunction() {
+                var x = document.getElementById("name").value;
+                var y = document.getElementById("name2").value;
+                var z = document.getElementById("name3").value;
+                var a = document.getElementById("name4").value;
+               
+        
+                if (x =="x" & y == "a" & z =="x" & a == ">"
+                ) {
+                    document.getElementById("check").innerHTML = "ถูกต้องครับ!"
+                }
+                 else {
+                    document.getElementById("check").innerHTML = "ยังไม่ถูกนะครับ"
+                }
+            } 
+        </script>
+        <script>
+            function myFunction2() {
+              document.getElementById("name").value = "x" ;
+              document.getElementById("name2").value = "a";
+              document.getElementById("name3").value = "x";
+              document.getElementById("name4").value = ">";
+            
+              
+            } 
+        </script>
+
+<form action="T_Keyboard.html">
+    <br><input type="submit" value="Next" color = "yellow" align="center" >
+  </form> 
+
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html><!--5-->>
+<html>
+<head>
+<style>
+body {
+  background-color: lightblue;
+}
+
+h1 {
+  color: rgb(8, 8, 8);
+  text-align: center;
+}
+
+p {
+  font-family: verdana;
+  font-size: 15px;
+  text-indent: 50px;
+}
+
+input[type="submit"]{
+    padding: 10px 25px 8px;
+    color: cornsilk;
+    background-color: darkblue;
+    text-shadow: 0 1px 0 rgba(0,0,0,25);
+    font-size: 16px;
+    box-shadow:rgba(255, 255, 255, .25) 0 2px 0 0 inset darkgray;
+    border: 1px solid #024978;
+    border-radius: 2px;
+    margin-top: 10px;
+    cursor: pointer;
+    
+}
+button{
+    color: black;
+    background-color: yellow;
+}
+
+</style>
+</head>
+<body>
+<h1>Simple Mathematical Operators</h1>
+<p>เอาละครับตอนนี้เราเดินทางมาถึงตัวดำเนินการกันบ้างแล้ว
+    ตัวดำเนินการคำนวณพื้นฐาน มีดังนี้   <br>                                     
+    <br>                                      
+    +  ตัวดำเนินการ     บวก     <br>                                   
+    -   ตัวดำเนินการ     ลบ      <br>                                  
+    *   ตัวดำเนินการ     คูณ         <br>                               
+    /   ตัวดำเนินการ     หาร       <br>                                 
+    %   ตัวดำเนินการ   มอดูลัส     #หรือก็คือการ mod เลข    <br>                               
+    **   ตัวดำเนินการ   ยกกำลัง      <br>                                  
+    //   ตัวดำเนินการ   หารไม่เอาเศษ     <br> 
+    <br>
+    
+    เช่น<br>
+    a = 5<br>
+    b = 6<br>
+    print(a+b)     # 11<br>
+    <br>
+    สามารถเขียนแบบนี้ได้ด้วยนะ<br>
+    a,b = 5,6<br>
+    print(a+b)<br>
+    <br>
+    b = 10<br>
+    c = 5<br>
+    d = b ** c<br>
+    print(d)        #d = 100000   <br>
+    <br>
+    a += 5 # หมายถึง a = a+5<br>
+    ตัวอย่าง<br>
+    a = 3<br>
+    b = 4<br>
+    a += b #เป็นการเปลี่ยนค่าใน a โดยบวก b เพิ่มเข้าไป<br>
+    print(a)       #a =  7<br></p>
+    <br>
+    ลองทดสอบกัน<br>
+    <p1><input type="text" id="name" name="fname" value="" size = "5">
+        = 10<br></p1>
+        b = a + 5
+    <br><p1><input type="text" id="name2" name="fname" value="" size = "5">
+        = (b)<br></p1>
+
+    <br>a=6<br>    
+    <p1><input type="text" id="name3" name="fname" value="" size = "5">
+        = 4<br></p1>
+    c = a *
+    <p1><input type="text" id="name4" name="fname" value="" size = "5" style="text-align: center;">
+            <br></p1>
+    <p1><input type="text" id="name5" name="fname" value="" size = "5">
+    = (c)<br></p1>
+    <br>
+    <button onclick="myFunction()">Submit</button>    
+    <button onclick="myFunction2()">Show Answer</button> 
+    <br><p3 id = "check"></p3>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("name").value;
+            var y = document.getElementById("name2").value;
+            var z = document.getElementById("name3").value;
+            var a = document.getElementById("name4").value;
+            var b = document.getElementById("name5").value;
+
+            if (x =="a" & y == "print" & z =="b" & a == "b") {
+                document.getElementById("check").innerHTML = "ถูกต้องครับ!"
+            }
+             else {
+                document.getElementById("check").innerHTML = "ยังไม่ถูกนะครับ"
+            }
+        } 
+    </script>
+ <script>
+    function myFunction2() {
+      document.getElementById("name").value = "a";
+      document.getElementById("name2").value = "print";
+      document.getElementById("name3").value = "b";
+      document.getElementById("name4").value = "b";
+      document.getElementById("name5").value = "print";
+    } 
+</script>
+
+<form action="T_BooleanOperators.html">
+    <br><input type="submit" value="Next" color = "yellow" align="center" >
+  </form> 
+
+</body>
+</html>

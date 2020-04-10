@@ -1,0 +1,148 @@
+<!DOCTYPE html><!--10-->
+<html>
+<head>
+<style>
+body {
+  background-color: lightblue;
+}
+
+h1 {
+  color: rgb(8, 8, 8);
+  text-align: center;
+}
+
+p {
+  font-family: verdana;
+  font-size: 15px;
+  text-indent: 50px;
+}
+
+input[type="submit"]{
+    padding: 10px 25px 8px;
+    color: cornsilk;
+    background-color: darkblue;
+    text-shadow: 0 1px 0 rgba(0,0,0,25);
+    font-size: 16px;
+    box-shadow:rgba(255, 255, 255, .25) 0 2px 0 0 inset darkgray;
+    border: 1px solid #024978;
+    border-radius: 2px;
+    margin-top: 10px;
+    cursor: pointer;
+    
+}
+button{
+    color: black;
+    background-color: yellow;
+}
+
+</style>
+</head>
+<body>
+<h1>Conditionals if-else</h1>
+<p>ทีนี้ผมจะมาสอนเรื่อง เงื่อนไขการตัดสินใจกันบ้าง<br>
+    ในที่นี้ผมจะสอนการใช้ if-else ในไพธอนกันนะครับ<br>
+    if condition: <br>
+    &nbsp;&nbsp;&nbsp;body <br>
+    else:    <br>
+    &nbsp;&nbsp;&nbsp;body<br>
+           <br>
+    เช่น <br>
+    a = 10<br>
+    if a > 5:<br>
+    &nbsp;&nbsp;&nbsp; print('YES')     <br> 
+    else:<br>
+    &nbsp;&nbsp;&nbsp; print('NO')<br>
+         <br>
+    คำตอบคือ YES เพราะว่า 10 มากกว่า 5 นั้นเอง  <br>
+    ข้อควรระวัง ผมจะขอยวนไปยังเรื่องที่3ที่ผมสอนคุณไปเรื่อง Indentation  สังเกตไหมครับว่า if กับ else จะอยู่ชิดฝั่งซ้ายและ print ไม่ได้อยู่ชิดฝั่งซ้าย หากเขียนผิดอาจจะ error
+    ได้นะครับ<br>
+    ถ้า<br>
+    a = 10<br>
+    if a > 5:<br>
+    &nbsp;&nbsp;&nbsp; print('YES')      <br>
+    else:<br>
+    &nbsp;&nbsp;&nbsp; print('NO')<br>
+    print('Done')<br>
+    <br>
+    จากโค้ดจะมีคำอะไรออกมาทางหน้าจอบ้างน่ะ<br>
+    คำตอบก็คือ YES กับ Done  สังเกตว่าคำสั่ง print('Done') อยู่ชิดฝั่งซ้ายหมายความว่ามันไม่ได้อยู่ในเงื่อนไขมันจึงรันของมันปกตินั้นเอง
+    <br><br>
+    กรณีที่มีหลายเงื่อนไขเราจะต้องใช้ elif ด้วย เช่น <br>
+    a,b,c = 1,2,3<br>
+    
+    if a == 1:<br>
+    &nbsp;&nbsp;&nbsp;print(a)<br>
+        <br>
+    elif b <3:<br></3:>
+    &nbsp;&nbsp;&nbsp;print(b)<br>
+        <br>
+    elif c >0:<br>
+    &nbsp;&nbsp;&nbsp;print(c)<br>
+        <br>
+    else:<br>
+    &nbsp;&nbsp;&nbsp;print('null')<br>
+    หากรันโค้ดนี้จะเห็นว่ามีแค่ 1 ที่โชว์ออกมาทั้งๆที่ กรณีอื่นก็เข้าเงื่อนไขด้วย เป็นเพราะการทำงานของ if กับ elif จะหาเงื่อนไขที่เป็นจริงตัวแรกตัวเดียว<br>
+    <br>a,b,c = 1,2,3<br>
+    
+    if a == 1:<br>
+    &nbsp;&nbsp;&nbsp;print(a)<br>
+    <br>
+    if b < 3: <br>
+    &nbsp;&nbsp;&nbsp;print(b)<br>
+        <br>
+    if c >0: <br>
+    &nbsp;&nbsp;&nbsp;print(c)<br>
+        <br>
+    else:<br>
+    &nbsp;&nbsp;&nbsp;print('null')<br>
+        <br>
+    ผลรันจะเป็น 1 2 3 ตามลำดับ เพราะ if จะเช็คทุกกรณี  <br>
+    ดังนั้นสามารถเลือกใช้ if ทั้งหมด หรือ elif ร่วมด้วยก็ได้แล้วแต่จะเลือกใช้</p><br>
+ลองทำดูหน่อยสิครับ<br>
+ทำอย่างไรให้แสดงค่า a และ b<br>
+a = 5<br>
+b = 6<br>
+if<p1><input type="text" id="name" name="fname" value="" size = "5" style="text-align: center;"></p1> 
+> 3:<br> &nbsp;&nbsp;&nbsp;print(a)<br>
+if b ==<p1><input type="text" id="name2" name="fname" value="" size = "5" style="text-align: center;"></p1>
+:<br> &nbsp;&nbsp;&nbsp;print(b)<br>
+a = 10<br>
+if a<p1><input type="text" id="name3" name="fname" value="" size = "5" style="text-align: center;"></p1> 
+15:<br> &nbsp;&nbsp;&nbsp;print('a')<br>
+else :<br>&nbsp;&nbsp;&nbsp;print('null')<br>
+<br>
+    <button onclick="myFunction()">Submit</button>    
+    <button onclick="myFunction2()">Show Answer</button> 
+    <br><p3 id = "check"></p3>   
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("name").value;
+            var y = document.getElementById("name2").value;
+            var z = document.getElementById("name3").value;
+
+            if (x =="a" & y == "6" & z ==">") {
+                document.getElementById("check").innerHTML = "ถูกต้องครับ!"
+            }
+             else {
+                document.getElementById("check").innerHTML = "ยังไม่ถูกนะครับ"
+            }
+        } 
+    </script>
+    <script>
+        function myFunction2() {
+          document.getElementById("name").value = "a" ;
+          document.getElementById("name2").value = "6";
+          document.getElementById("name3").value = ">";
+         
+          
+        } 
+    </script>
+
+
+<form action="T_Loops.html">
+    <br><input type="submit" value="Next" color = "yellow" align="center" >
+  </form> 
+
+</body>
+</html>

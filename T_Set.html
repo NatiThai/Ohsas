@@ -1,0 +1,126 @@
+<!DOCTYPE html><!--9-->
+<html>
+<head>
+<style>
+body {
+  background-color: lightblue;
+}
+
+h1 {
+  color: rgb(8, 8, 8);
+  text-align: center;
+}
+
+p {
+  font-family: verdana;
+  font-size: 15px;
+  text-indent: 50px;
+}
+
+input[type="submit"]{
+    padding: 10px 25px 8px;
+    color: cornsilk;
+    background-color: darkblue;
+    text-shadow: 0 1px 0 rgba(0,0,0,25);
+    font-size: 16px;
+    box-shadow:rgba(255, 255, 255, .25) 0 2px 0 0 inset darkgray;
+    border: 1px solid #024978;
+    border-radius: 2px;
+    margin-top: 10px;
+    cursor: pointer;
+    
+}
+button{
+    color: black;
+    background-color: yellow;
+}
+
+</style>
+</head>
+<body>
+<h1>Set</h1>
+<p>มาถึงเรื่อง set กันบ้างนะครับ ข้อสังเกตตัวแปรแบบเซตจะมีปีกกาอยู่เสมอ เช่น<br>
+    <br>
+    a = {1,2,3,4,5,6,'hello'}<br>
+    b = { 1,2,3,4,123, 'hello', 'python3'}<br>
+    <br>
+    ตัวแปรแบบเซตสามารถเก็บค่าได้ทั้งตัวเลขและข้อความ<br>
+    หากอยากเปลี่ยนค่าในเซตต้องใช้คำสั่งต่าง ๆ ดังนี้<br>
+    การเพิ่มค่าใน a <br>
+    a.add(ค่าหรือข้อความที่อยากเพิ่ม) เช่น<br>
+    a.add(10)<br>
+    print(a)       #{1, 2, 3, 4, 5, 6, 10, 'hello'}<br>
+    <br>
+    การลบค่าใน b <br>
+    b.discard('hello')<br>
+    print(b)      #{1, 2, 3, 4, 123, 'python3'} <br>
+    <br>
+    การยูเนียนต่างๆ<br>
+    print(a.union(b))                   #{1, 2, 3, 4, 5, 6, 'python3', 'hello', 123} <br>
+    print(a.intersection(b))         #{1, 2, 3, 4, 'hello'}<br>
+    print(a.difference(b))            #{5, 6}<br>
+    <br>
+    การเช็คว่ามีข้อมูลอยู่ใน เซตหรือไม่ทำได้โดยคำสั่ง in เช่น print(1 in b)</p><br>
+    
+    <p1>ยังมีคำสั่งอื่นๆอีกนะครับลองไปศึกษาดูเล่นกันได้
+        <a href="http://www.booboohome.com/2019/05/python-set/" target="_blank">Click here</a>
+        </p1><br><br>
+    ลองทำดูหน่อยสิครับ<br>
+    a = {1,2,3,4,5,6,7,8,9,'hello'}<br>
+    b = { 1,2,3,4,123,456, 'hello'}<br>
+    <br>
+    อยากรู้จำนวนข้อมูลที่อยู่ในเซต b จัง<br>
+    <p1><input type="text" id="name" name="fname" value="" size = "5"></p1>
+    (len(<p1><input type="text" id="name2" name="fname" value="" size = "5" style="text-align: center;"></p1>    ))    
+    <br>
+    <br>อยากจะก๊อบบี้ b ลงใน c จัง<br>
+    c = <p1><input type="text" id="name3" name="fname" value="" size = "5" style="text-align: center;"></p1>
+   <br>print(<p1><input type="text" id="name4" name="fname" value="" size = "5" style="text-align: center;"></p1>)
+   <br><br>ถ้าอยากนำคำว่า hello ออกจากเซต a จะทำไงน่ะ <br>
+   <p1><input type="text" id="name5" name="fname" value="" size = "5"></p1> 
+   .discard('<p1><input type="text" id="name6" name="fname" value="" size = "5" style="text-align: center;"></p1> ')      
+    <br>print(<p1><input type="text" id="name7" name="fname" value="" size = "5" style="text-align: center;"></p1> )
+    <br><br>
+    <button onclick="myFunction()">Submit</button>    
+    <button onclick="myFunction2()">Show Answer</button> 
+    <br><p3 id = "check"></p3>   
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("name").value;
+            var y = document.getElementById("name2").value;
+            var z = document.getElementById("name3").value;
+            var a = document.getElementById("name4").value;
+            var b = document.getElementById("name5").value;
+            var c = document.getElementById("name6").value;
+            var d = document.getElementById("name7").value;
+
+            if (x =="print" & y == "b" & z =="b.coppy()"
+            & a == "c" & b == "a" &c == "hello" & d == "a") {
+                document.getElementById("check").innerHTML = "ถูกต้องครับ!"
+            }
+             else {
+                document.getElementById("check").innerHTML = "ยังไม่ถูกนะครับ"
+            }
+        } 
+    </script>
+    <script>
+        function myFunction2() {
+          document.getElementById("name").value = "print";
+          document.getElementById("name2").value = "b";
+          document.getElementById("name3").value = "b.coppy()";
+          document.getElementById("name4").value = "c";
+          document.getElementById("name5").value = "a";
+          document.getElementById("name6").value = "hello";
+          document.getElementById("name7").value = "a";
+          
+        } 
+    </script>
+
+
+<form action="T_Conditionalsifelse.html">
+    <br><input type="submit" value="Next" color = "yellow" align="center" >
+  </form> 
+
+</body>
+</html>a

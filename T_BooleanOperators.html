@@ -1,0 +1,141 @@
+<!DOCTYPE html><!--6-->>
+<html>
+<head>
+<style>
+body {
+  background-color: lightblue;
+}
+
+h1 {
+  color: rgb(8, 8, 8);
+  text-align: center;
+}
+
+p {
+  font-family: verdana;
+  font-size: 15px;
+  text-indent: 50px;
+}
+
+input[type="submit"]{
+    padding: 10px 25px 8px;
+    color: cornsilk;
+    background-color: darkblue;
+    text-shadow: 0 1px 0 rgba(0,0,0,25);
+    font-size: 16px;
+    box-shadow:rgba(255, 255, 255, .25) 0 2px 0 0 inset darkgray;
+    border: 1px solid #024978;
+    border-radius: 2px;
+    margin-top: 10px;
+    cursor: pointer;
+    
+}
+button{
+    color: black;
+    background-color: yellow;
+}
+
+</style>
+</head>
+<body>
+<h1>BooleanOperators</h1>
+<p>ตัวดำเนินการแบบ Boolean ที่ผมจะสอนมี 3 ชนิดดังนี้<br>
+    and  (&)<br>
+    x = True <br>
+    y = True <br>
+    z = x and y     #สำหรับand  True and True  จะเป็นTrue  กรณีเดียว     #True = 1 , False  = 0<br>
+    print(z)          # z = True<br>
+    <br>
+    x = True <br>
+    y = False <br>
+    z = x and y     # x & y   เขียนแบบนี้ก็ได้นะครับ<br>
+    print(z)           # z = False <br>
+    <br>
+    x = False <br>
+    y = True<br>
+    z = x and y <br>
+    print(z)           # z = False <br>
+    <br>
+    x = False <br>
+    y = False <br>
+    z = x and y <br>
+    print(z)            # z = False <br>
+    <br>
+    
+    or (|)<br>
+    x = True <br>
+    y = True <br>
+    z = x or y   <br>
+    print(z)          # z = True<br>
+    <br>
+    x = True <br>
+    y = False <br>
+    z = x or y <br>
+    print(z)         # z = True<br>
+    <br>
+    x = False <br>
+    y = True<br>
+    z = x or y <br>
+    print(z)         # z = True<br>
+    <br>
+    x = False <br>
+    y = False <br>
+    z = x or y               #สำหรับand  False or False จะเป็นFalse กรณีเดียว<br>
+    print(z)        # z = False<br>
+    <br>
+    
+    
+    not<br>
+    x = True <br>
+    y = not x<br>
+    print(y)       # y = False<br>
+    <br>
+    x = False <br>
+    y = not x<br>
+    print(y)        # y = True</p><br>
+    <br>ลองทำกันดูหน่อยสิครับ<br>
+    a = 
+    <p1><input type="text" id="iname" name="fname" value="" size = "5" style="text-align: center;">
+        <br></p1>
+    b = 0<br>   
+    a and b = 0<br> 
+    <br>
+    a = 
+    <p1><input type="text" id="fname" name="fname" value="" size = "5" style="text-align: center;">
+        <br></p1>
+    b =    
+    <p1><input type="text" id="sname" name="fname" value="" size = "5" style="text-align: center;">
+        <br>a or b = 0<br></p1><br>
+        <button onclick="myFunction()">Submit</button>    
+        <button onclick="myFunction2()">Show Answer</button> 
+        <br><p3 id = "check"></p3>  
+
+        <script>
+            function myFunction() {
+                var x = document.getElementById("iname").value;
+                var y = document.getElementById("fname").value;
+                var z = document.getElementById("sname").value;
+
+                if (x =="b" & y == "0" & z =="0") {
+                    document.getElementById("check").innerHTML = "ถูกต้องครับ!"
+                }
+                 else {
+                    document.getElementById("check").innerHTML = "ยังไม่ถูกนะครับ"
+                }
+            } 
+        </script>
+        <script>
+            function myFunction2() {
+              document.getElementById("iname").value = "b";
+              document.getElementById("fname").value = "0";
+              document.getElementById("sname").value = "0";
+            } 
+        </script>
+
+
+<form action="T_OperatorPrecedenc.html">
+    <br><input type="submit" value="Next" color = "yellow" align="center" >
+  </form> 
+
+</body>
+</html>

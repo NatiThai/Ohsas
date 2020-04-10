@@ -1,0 +1,141 @@
+<!DOCTYPE html><!--15-->
+<html>
+<head>
+<style>
+body {
+  background-color: lightblue;
+}
+
+h1 {
+  color: rgb(8, 8, 8);
+  text-align: center;
+}
+
+p {
+  font-family: verdana;
+  font-size: 15px;
+  text-indent: 50px;
+}
+
+input[type="submit"]{
+    padding: 10px 25px 8px;
+    color: cornsilk;
+    background-color: darkblue;
+    text-shadow: 0 1px 0 rgba(0,0,0,25);
+    font-size: 16px;
+    box-shadow:rgba(255, 255, 255, .25) 0 2px 0 0 inset darkgray;
+    border: 1px solid #024978;
+    border-radius: 2px;
+    margin-top: 10px;
+    cursor: pointer;
+    
+}
+button{
+    color: black;
+    background-color: yellow;
+}
+
+</style>
+</head>
+<body>
+<h1>Tuple</h1>
+<p>ทีนี้ผมก็จะมาสอนเรื่อง Tuple กันนะครับ
+    Tuple จะคล้ายกับ List แต่สิ่งที่แตกต่างกันคือ Tuple นั้นเป็นประเภทข้อมูลที่ไม่สามารถเปลี่ยนแปลงได้   <br>                                                     
+    การประกาศ Tuple นั้นสามารถทำได้หลายวิธี รูปแบบพื้นฐานของมันคือสมาชิกของ Tuple ทุกตัวจะอยู่ภายในวงเล็บ ()  <br>                                                      
+    และคั่นสมาชิกแต่ละตัวด้วยเครื่องหมายคอมมา (,)               <br>                                         
+    เช่น       <br>                                                 
+    a = (1, 2, 3, 4)                    # เป็นการประกาศตัวแปร Tuples แบบธรรมดา        <br>                          
+    b = 1, 2, 3, 4                      #นี่ก็เป็นอีกวิธีในการประกาศตัวแปรแบบ Tuples        <br>                               
+    c = tuple(['C++', 'C#', 'Java', 'Pyhton'])        #สร้างตัวแปรโดยการใช้ฟังก์ชัน tuple() โดยสร้างจาก List   <br>                                                
+    d = tuple(range(1, 10, 2))                             #สร้างตัวแปรโดยการใช้ฟังก์ชัน tuple()จากฟังก์ชัน range() หมายความว่าจาก 1 เพิ่มทีละ 2 ถึง 10   <br>                        
+    <br>                                                                                                                                                              
+    print(a) # (1, 2, 3, 4)           <br>                                    
+    print(b)  #  (1, 2, 3, 4)       <br>                                        
+    print(c)  #  ('C++', 'C#', 'Java', 'Pyhton')      <br>                                
+    print(d)  #  (1, 3, 5, 7, 9)          <br>                                    
+    <br>                          
+    <br>                             
+    Tuple slicing                <br>                                        
+    ในการทำงานกับ Tuple เราสามารถแบ่งมันออกเป็นส่วนย่อยๆ ได้ ด้วยวิธีการที่เรียกว่า      <br>                                                  
+    Slicing โดยปกติแล้วมันมักจะใช้สำหรับคัดลอกข้อมูลจาก Tuple เดิมเพื่อสร้างอันใหม่ ซึ่งการ slice นั้นจะทำ    <br>                                                    
+    ในรูปแบบของ Index ของ Tuple [start:end] มาดูตัวอย่างกันเลย      <br>                                                  
+    <br>                                              
+    n = (1, 2, 3, 4, 'Python', 'PHP', 'Java', 'Thailand', 'Hello')    <br>                                                    
+    <br>                                                
+    a= n[0:5] #เริ่มที่ 0 ถึง 5        <br>                                                
+    b= n[4:7]  #เริ่มที่ 4 ถึง 7 (7ไม่นับ)         <br>                                            
+    c= n[7:9]  # เริ่มที่ 7 ถึง 9 (9ไม่นับ)        <br>                                           
+    <br>                            
+    print(a)    #  (1, 2, 3, 4, 'Python')           <br>                                       
+    print(b)    # ('Python', 'PHP', 'Java')        <br>                                          
+    print(c)    # ('Thailand', 'Hello')            <br>                                  
+    <br>             
+    ถ้าหากอยากเปลี่ยนแปลงข้อมูลใน Tuples ละ        <br>                                                
+    myTuple = (1,2,3)                   <br>                                     
+    myList = list(myTuple)               <br>                                         
+    myList.append(4)                     <br>                                   
+    print (myList)                       <br>               
+    </p>
+<br>
+    ลองทำดูหน่อยสิครับ<br>
+n = (1, 2, 3, 4, 'Python', 'PHP', 'Java', 'Thailand', 'Hello')  <br>
+<br>
+อยากให้โชว์ค่าที่อยู่ใน n ออกมาเเค่ (1, 3, 'Python', 'Java', 'Hello') จะทำอย่างไรน่ะ <br>
+print(n[0:9:<p1><input type="text" id="name" name="fname" value="" size = "5" style="text-align: center;"></p1>])
+<br>
+อยากให้โชว์ค่าที่อยู่ออกมาเป็น ('Hello', 'Java', 'Python', 3) จะทำอย่างไรน่ะ <br>
+print(<p1><input type="text" id="name2" name="fname" value="" size = "5" style="text-align: center;"></p1>
+[<p1><input type="text" id="name3" name="fname" value="" size = "5" style="text-align: center;"></p1>
+:-9:-2])<br>
+<br>
+ทำอย่างไรให้ผลรันออกมาเป็น [2, 4, 'PHP', 'Thailand', 'love'] <br>
+<p1><input type="text" id="name4" name="fname" value="" size = "5"></p1>
+ = n[1:<p1><input type="text" id="name5" name="fname" value="" size = "5" style="text-align: center;"></p1>:2]
+ <br>
+ <p1><input type="text" id="name6" name="fname" value="" size = "5"></p1> = list(a)<br>
+b.append('<p1><input type="text" id="name7" name="fname" value="" size = "5" style="text-align: center;"></p1>')
+<br>print(b)
+            <br><br>   
+        
+        <button onclick="myFunction()">Submit</button>    
+        <button onclick="myFunction2()">Show Answer</button> 
+        <br><p3 id = "check"></p3>   
+    
+        <script>
+            function myFunction() {
+                var x = document.getElementById("name").value;
+                var y = document.getElementById("name2").value;
+                var z = document.getElementById("name3").value;
+                var a = document.getElementById("name4").value;
+                var b = document.getElementById("name5").value;
+                var c = document.getElementById("name6").value;
+                var d = document.getElementById("name7").value;
+        
+                if (x =="2" & y == "n" & z =="-1" & a == "a"
+                & b == "9" & c == "b" & d =="love") {
+                    document.getElementById("check").innerHTML = "ถูกต้องครับ!"
+                }
+                 else {
+                    document.getElementById("check").innerHTML = "ยังไม่ถูกนะครับ"
+                }
+            } 
+        </script>
+        <script>
+            function myFunction2() {
+              document.getElementById("name").value = "2" ;
+              document.getElementById("name2").value = "n";
+              document.getElementById("name3").value = "-1";
+              document.getElementById("name4").value = "a";
+              document.getElementById("name5").value = "9";
+              document.getElementById("name6").value = "b";
+              document.getElementById("name7").value = "love";
+              
+            } 
+        </script>
+
+<form action="T_Functions.html">
+    <br><input type="submit" value="Next" color = "yellow" >
+  </form> 
+
+</body>
+</html>

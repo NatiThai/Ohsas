@@ -1,0 +1,131 @@
+<!DOCTYPE html><!--8-->
+<html>
+<head>
+<style>
+body {
+  background-color: lightblue;
+}
+
+h1 {
+  color: rgb(8, 8, 8);
+  text-align: center;
+}
+
+p {
+  font-family: verdana;
+  font-size: 15px;
+  text-indent: 50px;
+}
+
+input[type="submit"]{
+    padding: 10px 25px 8px;
+    color: cornsilk;
+    background-color: darkblue;
+    text-shadow: 0 1px 0 rgba(0,0,0,25);
+    font-size: 16px;
+    box-shadow:rgba(255, 255, 255, .25) 0 2px 0 0 inset darkgray;
+    border: 1px solid #024978;
+    border-radius: 2px;
+    margin-top: 10px;
+    cursor: pointer;
+    
+}
+button{
+    color: black;
+    background-color: yellow;
+}
+
+</style>
+</head>
+<body>
+<h1>Comparisons</h1>
+<p>เอาละครับทีนี้ก็มาถึงเรื่อง Comparisons กันบ้าง<br>
+    ในการเปรียบเทียบระหว่างตัวแปร 2 ตัว เราจะใช้เครื่องหมายเท่ากับ2 อัน(==) เทียบว่าทั้ง 2 ตัวแปรเท่ากันหรือไม่  เช่น<br>
+    a = 5<br>
+    b = 5<br>
+    c = b==a<br>
+    print(c)    #True <br>
+    <br>
+    และเครื่องหมาย ไม่เท่ากัน จะใช้ เครื่องหมายตกใจและเครื่องหมายเท่ากับ(!=)<br>
+    a = 5<br>
+    b = 2<br>
+    c = b!=a<br>
+    print(c)    #True <br>
+    <br>
+    
+    หากตัวแปรเก็บค่าเป็นตัวอักษร(String) จะไม่สามารถใช้ (==) และ (!=) ในการเทียบกันได้  <br> 
+    ต้องใช้ is กับ is not    เช่น<br>
+    a = 'PythonMan handsome' <br>
+    b = 'PythonMan handsome' <br>
+    print(a is b)    #True      #หลักการเท่ากันทุกตัวต้องเหมือนกัน<br>
+    <br>
+    
+    และกรณีไม่เท่ากัน<br>
+    a = 'PythonMan handsome' <br>
+    b = 'PythonMan_handsome' <br>
+    print(a is not b)  #True </p><br>
+
+    ลองทำดูหน่อยสิครับ<br>
+    <p1><input type="text" id="name" name="fname" value="" size = "5">
+        = 'PythonMan handsome' <br></p1> 
+    b = 'PythonMan_handsome'<br>
+    b is a =  
+    <p1><input type="text" id="name2" name="fname" value="" size = "5" style="text-align: center;">
+         <br></p1>    
+     <br><br>    
+    a = 'PythonMan handsome' <br>
+    b = 'PythonMan handsome'     <br>
+    <p1><input type="text" id="name3" name="fname" value="" size = "5">
+     is not </p1>  
+    <p1><input type="text" id="name4" name="fname" value="" size = "5" style="text-align: center;"></p1>             
+    =<p1><input type="text" id="name5" name="fname" value="" size = "5" style="text-align: center;"></p1>
+    <br><br><br>
+    x = 5<br>
+    <p1><input type="text" id="name6" name="fname" value="" size = "5"></p1>    
+    = 4<br>
+    x is y =<p1><input type="text" id="name7" name="fname" value="" size = "5" style="text-align: center;"></p1>
+    <br>
+    <br>
+    <button onclick="myFunction()">Submit</button>    
+    <button onclick="myFunction2()">Show Answer</button> 
+    <br><p3 id = "check"></p3>   
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("name").value;
+            var y = document.getElementById("name2").value;
+            var z = document.getElementById("name3").value;
+            var a = document.getElementById("name4").value;
+            var b = document.getElementById("name5").value;
+            var c = document.getElementById("name6").value;
+            var d = document.getElementById("name7").value;
+
+            if (x =="a" & y == "False" & z =="a"
+            & a == "b" & b == "False" &c == "y" & d == "True") {
+                document.getElementById("check").innerHTML = "ถูกต้องครับ!"
+            }
+             else {
+                document.getElementById("check").innerHTML = "ยังไม่ถูกนะครับ"
+            }
+        } 
+    </script>
+    <script>
+        function myFunction2() {
+          document.getElementById("name").value = "a";
+          document.getElementById("name2").value = "False";
+          document.getElementById("name3").value = "a";
+          document.getElementById("name4").value = "b";
+          document.getElementById("name5").value = "False";
+          document.getElementById("name6").value = "y";
+          document.getElementById("name7").value = "True";
+          
+        } 
+    </script>
+
+
+<form action="T_Set.html">
+    <br><input type="submit" value="Next" color = "yellow" align="center" >
+  </form> 
+
+</body>
+</html>

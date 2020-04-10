@@ -1,0 +1,144 @@
+<!DOCTYPE html><!--14-->
+<html>
+<head>
+<style>
+body {
+  background-color: lightblue;
+}
+
+h1 {
+  color: rgb(8, 8, 8);
+  text-align: center;
+}
+
+p {
+  font-family: verdana;
+  font-size: 15px;
+  text-indent: 50px;
+}
+
+input[type="submit"]{
+    padding: 10px 25px 8px;
+    color: cornsilk;
+    background-color: darkblue;
+    text-shadow: 0 1px 0 rgba(0,0,0,25);
+    font-size: 16px;
+    box-shadow:rgba(255, 255, 255, .25) 0 2px 0 0 inset darkgray;
+    border: 1px solid #024978;
+    border-radius: 2px;
+    margin-top: 10px;
+    cursor: pointer;
+    
+}
+button{
+    color: black;
+    background-color: yellow;
+}
+
+</style>
+</head>
+<body>
+<h1>List</h1>
+<p>มาถึงเรื่อง List กันแล้วนะครับ List นั้นเป็นตัวแปรประเภทหนึ่ง การใช้งานของมันจะเหมือนกันอาเรย์ในภาษาอื่นๆ ในการประกาศ List นั้น   <br>                                                     
+    ข้อมูลของมันจะอยู่ภายในเครื่องหมาย [] และคั่นสมาชิกแต่ละตัวด้วยเครื่องหมายคอมมา ,   <br>                                                       
+    <br>                                            
+    เช่น           <br>                                               
+    a= [-1, 2, 5, 8, 10, 13]          <br>                                                
+    b= ['Mateo', 'Danny', 'James', 'Thomas', 'Luke']    <br>                                                      
+    c= [-2, 5, 84.2, "Mountain", "Python"]         <br>                                                 
+    <br>                      
+    print(test)                      <br>                                    
+    print(test2)                   <br>                                       
+    print(test3)                        <br>                                  
+    <br>                      
+    จากตัวอย่างจะเห็นได้ว่าเราได้สร้างตัวแปร List สามตัวแปรคือ a, b, c และสามารถเก็บข้อมูลเป็นได้ทั้ง int ,String หรือ รวมกัน       <br>                                                   
+    <br>                                               
+    เรายังสามารถเล่นกับข้อมูลได้ด้วย        <br>                                                  
+    เช่น คำสั่ง  append() เป็นการเพิ่มข้อมูลนั้นเอง         <br>                                                 
+    <br>                                  
+    a.append(14)              <br>                                            
+    print(a)                 #[-1, 2, 5, 8, 10, 13, 14]   <br>                                       
+    <br>                        
+    และคำสั่ง remove()                  <br>                                                                                                
+    a.remove(13)                       <br>                                   
+    print(a)                #[-1, 2, 5, 8, 10, 14]    <br>                                      
+    <br>                         
+    <br>                            
+    และสามารถใช้กับคำสัง For loopได้ดังนี้  ( For loop อยู่ในบททัดไป)    <br>                                                      
+    <br>                
+    numbers = [1, 2, 3, 4, 5, 6, 7,8,9,10,'hello']      <br>                                                    
+    for n in numbers:                  <br>                                        
+        print(n, end = ' ')    <br> 
+        <br> 
+    ในภาษา Python เราสามารถตัดข้อมูลจาก List หนึ่งแล้วนำไปสร้างเป็น List ใหม่ได้ โดยเรียกกว่า slicing  <br> 
+    data = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'] <br> 
+    <br> 
+    a = data[0:4] # a ถึง d <br> 
+    b = data[4:9] # e ถึง h <br> 
+    c = data[:3] # a ถึง c <br> 
+    d = data[3:] # c ถึง h <br> 
+    e = data[:] # ใส่ค่าใน data ลงไปใน e <br> 
+    f = data[0:2] + data[6:8] # a กับ b และ g กับ h <br> 
+    <br> 
+    print(a)    #['a', 'b', 'c', 'd'] <br> 
+    print(b)    #['e', 'f', 'g', 'h']   <br> 
+    print(c)    #['a', 'b', 'c']  <br> 
+    print(d)    #['d', 'e', 'f', 'g', 'h'] <br> 
+    print(e)    #['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'] <br> 
+    print(f)    #['a', 'b', 'g', 'h']  <br> 
+    </p>
+
+    ลองทำดูหน่อยสิครับ<br> 
+a = [1, 2, 3, 4, 5, 6, 7,8,9,10,'hello']  <br> 
+<br> 
+ถ้าอยากนำเลข 3 ออกจาก a และไปใส่ใน b จะทำยังไงนะ<br> 
+<p1><input type="text" id="name" name="fname" value="" size = "5"></p1>
+ = <p1><input type="text" id="name2" name="fname" value="" size = "5" style="text-align: center;"></p1>.pop(3)<br> 
+print(b)<br> 
+<br> 
+<br> 
+ถ้าอยากเพิ่ม [11,12] เข้าไปใน a จะทำไงนะ<br> 
+<p1><input type="text" id="name3" name="fname" value="" size = "5"></p1>
+.append(11,<p1><input type="text" id="name4" name="fname" value="" size = "5" style="text-align: center;"></p1>])<br> 
+print(a)<br> 
+<br> <br>
+
+               
+        
+        <button onclick="myFunction()">Submit</button>    
+        <button onclick="myFunction2()">Show Answer</button> 
+        <br><p3 id = "check"></p3>   
+    
+        <script>
+            function myFunction() {
+                var x = document.getElementById("name").value;
+                var y = document.getElementById("name2").value;
+                var z = document.getElementById("name3").value;
+                var a = document.getElementById("name4").value;
+               
+        
+                if (x =="a" & y == "b" & z =="a" & a == "12") {
+                    document.getElementById("check").innerHTML = "ถูกต้องครับ!"
+                }
+                 else {
+                    document.getElementById("check").innerHTML = "ยังไม่ถูกนะครับ"
+                }
+            } 
+        </script>
+        <script>
+            function myFunction2() {
+              document.getElementById("name").value = "a" ;
+              document.getElementById("name2").value = "b";
+              document.getElementById("name3").value = "a";
+              document.getElementById("name4").value = "12";
+             
+              
+            } 
+        </script>
+
+<form action="T_Tuple.html">
+    <br><input type="submit" value="Next" color = "yellow" align="center" >
+  </form> 
+
+</body>
+</html>

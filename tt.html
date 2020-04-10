@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+
+<p1><input type="text" id="fname" name="fname" value="p" size = "5">
+    </p1>
+
+<button onclick="myFunction()">Submit</button>  
+<br>
+<p3 id = "pp"></p3>
+<script>
+    function myFunction() {
+     var x = document.getElementById("fname").value;
+     
+      if(x.search('p') == true)
+      {
+        document.getElementById("pp").innerHTML = 'ohsas';
+      }
+      else
+      {
+        
+      }
+    } 
+  </script>  
+<form action="t2.html">
+  <br><input type="submit" value="Next" >
+</form> 
+
+</body>
+</html> 

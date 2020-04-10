@@ -1,0 +1,131 @@
+<!DOCTYPE html><!--1-->
+<html>
+<head>
+<style>
+body {
+  background-color: lightblue;
+}
+
+h1 {
+  color: rgb(8, 8, 8);
+  text-align: center;
+}
+
+p {
+  font-family: verdana;
+  font-size: 15px;
+  text-indent: 50px;
+}
+
+div {
+  border: 1px solid blue;
+  background-color: yellow;
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+}
+input[type="submit"]{
+    padding: 10px 25px 8px;
+    color: cornsilk;
+    background-color: darkblue;
+    text-shadow: 0 1px 0 rgba(0,0,0,25);
+    font-size: 16px;
+    box-shadow:rgba(255, 255, 255, .25) 0 2px 0 0 inset darkgray;
+    border: 1px solid #024978;
+    border-radius: 2px;
+    margin-top: 10px;
+    cursor: pointer;
+    
+}
+button{
+    color: black;
+    background-color: yellow;
+}
+</style>
+</head>
+<body>
+
+<h1>Hello Python!</h1>
+<p>สวัสดีครับ..ผม PythonMan ผมจะพาคุณมารู้จักกับการเขียนโปรแกรมภาษาไพธอนขั้นพื้นฐานกัน เอาละมาเริ่มกันเลย                                 
+  ขั้นแรก การแสดงข้อความออกทางหน้าจอในภาษาไพธอนนี้จะใช้คำสั่งว่า print() แล้วตามด้วยข้อความที่จะแสดง เช่น
+  print('Hello Python') เมื่อรันแล้วจะได้ข้อความว่า Hello Python ออกมา หรือจะเขียนแบบนี้ก็ได้นะครับ print("Hello Python")
+  มาถึงตรงแล้วผมยังไม่รู้จักชื่อคุณเลย ช่วยบอกชื่อ-สกุลคุณหน่อยได้ไหมครับ</p>
+
+
+<p1><input type="text" id="fname" name="fname" value="p" size = "5">
+  (<input type="text" id="lname" name="lname"  size = "15">)</p1>
+
+<button onclick="myFunction()">Submit</button>    
+<button onclick="myFunction3()">Show Answer</button> 
+<br><p2 id = "check1"></p2>
+  
+<br><p1><br>ทีนี้คุณรู้หรือไม่ หากใส่ \n ไว้ตรงกลางระหว่างชื่อกับนามสกุลของคุณจะเกิดอะไรขึ้นลองไปทำกันเลย<br></p1>
+
+<p1><input type="text" id="fname2" name="fname" value="p" size = "5">
+  (<input type="text" id="lname2" name="lname"  size = "15">)</p1>
+
+<button onclick="myFunction2()">Submit</button>   
+<button onclick="myFunction4()">Show Answer</button>        
+<br><p3 id = "check2" ></p3>
+
+<br><p1><br>นอกจากนี้ยังมีลูกเล่นพวกนี้อยู่ด้วยลองไปเล่นกันดูได้นะครับ<br>
+  \t   หมายถึง แท็บ<br>                                
+  \0   หมายถึง อักขระ NULL (ว่างเปล่า)<br>                                
+  \’   หมายถึง อักขระ '<br>                                
+  \"   หมายถึง อักขระ "<br>                                
+  \\   หมายถึง อักขระ \  </p1><br>
+
+<script>
+  function myFunction() {
+   var x = document.getElementById("fname").value;
+   var y = document.getElementById("lname").value;
+
+    if(x == "print")
+    {
+      document.getElementById("check1").innerHTML = "ถูกต้องครับ!"
+    }
+    else
+    {
+      document.getElementById("check1").innerHTML = "ยังไม่ถูกนะครับ"
+    }
+  } 
+</script>
+<script>
+  function myFunction2() {
+   var x = document.getElementById("fname2").value;
+   var y = document.getElementById("lname2").value;
+
+    if(x == "print")
+    {
+      document.getElementById("check2").innerHTML = "ถูกต้องครับ!"
+    }
+    else
+    {
+      document.getElementById("check2").innerHTML = "ยังไม่ถูกนะครับ"
+    }
+  } 
+</script>
+<script>
+  function myFunction3() {
+    document.getElementById("fname").value = "print";
+    document.getElementById("lname").value = "ชื่อและนามสกุลของคุณ";
+  } 
+</script>
+<script>
+  function myFunction4() {
+    document.getElementById("fname2").value = "print";
+    document.getElementById("lname2").value = "ชื่อ \\n นามสกุลของคุณ";
+  } 
+</script>
+
+  <form action= "T_comment.html">
+    
+        <br><input type="submit" value="Next" color = "red">
+    
+  </form> 
+
+
+
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html><!--11-->
+<html>
+<head>
+<style>
+body {
+  background-color: lightblue;
+}
+
+h1 {
+  color: rgb(8, 8, 8);
+  text-align: center;
+}
+
+p {
+  font-family: verdana;
+  font-size: 15px;
+  text-indent: 50px;
+}
+
+input[type="submit"]{
+    padding: 10px 25px 8px;
+    color: cornsilk;
+    background-color: darkblue;
+    text-shadow: 0 1px 0 rgba(0,0,0,25);
+    font-size: 16px;
+    box-shadow:rgba(255, 255, 255, .25) 0 2px 0 0 inset darkgray;
+    border: 1px solid #024978;
+    border-radius: 2px;
+    margin-top: 10px;
+    cursor: pointer;
+    
+}
+button{
+    color: black;
+    background-color: yellow;
+}
+
+</style>
+</head>
+<body>
+<h1>Loops</h1>
+<p>ก็มาถึงเรื่องการวนลูปแล้วนะครับ การวนลูปเป็นการทำงานแบบซ้ำๆ ตามเงื่อนไข<br>
+    และที่ผมจะมาสอนมี 2 แบบนะครับ<br>
+    แบบแรก <br>
+    for i in [1,2,3,4,5,6,7,8,9,10]: <br>
+    &nbsp;&nbsp;&nbsp;print(i)<br>
+        <br>
+    เมื่อรันก็จะได้เลข 1 ถึง 10 ตามลำดับ<br>
+    เป็นข้อความก็ได้นะครับ<br>
+    for x in ['one', 'two', 'three', 'four']:<br>
+    &nbsp;&nbsp;&nbsp;print(x)<br>
+        <br>
+    การใช้ for ยังใช้ได้อีกแบบคือใช้ร่วมกับ range() <br>
+    range เป็นคำสั่งสำหรับมีไว้ในการลำดับจำนวนตัวเลข  เช่น<br>
+    for i in range(10):  <br>
+    &nbsp;&nbsp;&nbsp;print(i)<br>
+    ผลลัพธ์ จะได้ 0 ถึง 9 ตามลำดับ<br>
+    <br>
+    for i in range(1,10):  <br>
+    &nbsp;&nbsp;&nbsp;print(i)<br>
+    ผลลัพธ์ จะได้ 1 ถึง 9 ตามลำดับ<br>
+    <br>
+    for i in range(1,10,2):  <br>
+    &nbsp;&nbsp;&nbsp;print(i)<br>
+    ผลลัพธ์ จะได้ 1 3 5 7 9  <br>
+    เป็นเพราะว่า เริ่มจาก 1 ถึง 10(10ไม่นับ) และ 2 คือสเต็ปในการลำดับจำนวน จะได้สูตรเป็น (เริ่ม , จบ , สเต็ป) (1,10,2): <br>
+    <br>
+    ใช้ for กับ else เช่น<br>
+    for i in range(3):  <br>
+    &nbsp;&nbsp;&nbsp;print(i) <br>
+    else:   <br>
+    &nbsp;&nbsp;&nbsp;print('done')<br>
+         <br>
+    ต่อไปแบบที่สอง while loop<br>
+    เช่น<br>
+    i = 0<br>
+    while i < 3:    <br>
+    &nbsp;&nbsp;&nbsp;print(i)  <br>
+    &nbsp;&nbsp;&nbsp;i += 1 <br>
+        <br>
+    ผลลัพธ์จะได้ 0 1 2 ตามลำดับ เพราะ รอบแรก i = 0  แล้ว 0 น้อยกว่า 3 จึง print(i) ซึ่ง i เท่ากับ 0<br>
+    ในรอบสองตรงคำสั่ง i += 1 ทำให้ i เท่ากับ 1 แล้ว 1 น้อยกว่า 3 จึง print(i) ซึ่ง i เท่ากับ 1<br>
+    ในรอบสามตรงคำสั่ง i += 1 ทำให้ i เท่ากับ 2 แล้ว 2 น้อยกว่า 3 จึง print(i) ซึ่ง i เท่ากับ 2<br>
+    ในรอบที่สี่ตรงคำสั่ง i += 1 ทำให้ i เท่ากับ 3 แล้ว 3 ไม่ได้น้อยกว่า 3 จึงหลุด loop และเสร็จการทำงาน<br>
+    <br>
+    ใช้ร่วมกับ else ได้เหมือนกันนะ<br>
+    i = 0<br>
+    while i < 3:    <br>
+    &nbsp;&nbsp;&nbsp;print(i) <br>
+    &nbsp;&nbsp;&nbsp;i += 1 <br>
+    else:  <br>
+    &nbsp;&nbsp;&nbsp;print('done')<br>
+    ผลลัพธ์จะได้ 0 1 2 done ตามลำดับ</p><br>
+<p1>ลองทำดูหน่อยสิครับ<br>
+    ทำอย่างไรให้ผลรันออกมาเป็น<br>
+    0           <br>                                                                                                                                   
+    1        <br>                                                                                                                                      
+    2               <br>                                                                                                                               
+    3              <br>                                                                                                                                
+    4             <br>                                                                                                                                 
+    Breaking from loop</p1><br>
+    <br>
+    i = 0 <br>
+    <p1><input type="text" id="name" name="fname" value="" size = "5" ></p1> 
+    i - 7: <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print(<p1><input type="text" id="name2" name="fname" value="" size = "5" style="text-align: center;"></p1> )   
+    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if &nbsp;i == <p1><input type="text" id="name3" name="fname" value="" size = "5" style="text-align: center;"></p1>
+    :<br>    
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("Breaking from loop")  <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break    #เป็นคำสั่งให้หยุดกันทำงาน   <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;i += <p1><input type="text" id="name4" name="fname" value="" size = "5" style="text-align: center;"></p1> 
+    <br>
+
+<br>
+    <button onclick="myFunction()">Submit</button>    
+    <button onclick="myFunction2()">Show Answer</button> 
+    <br><p3 id = "check"></p3>   
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("name").value;
+            var y = document.getElementById("name2").value;
+            var z = document.getElementById("name3").value;
+            var a = document.getElementById("name4").value;
+
+            if (x =="while" & y == "i" & z =="4" & a == "1") {
+                document.getElementById("check").innerHTML = "ถูกต้องครับ!"
+            }
+             else {
+                document.getElementById("check").innerHTML = "ยังไม่ถูกนะครับ"
+            }
+        } 
+    </script>
+    <script>
+        function myFunction2() {
+          document.getElementById("name").value = "while" ;
+          document.getElementById("name2").value = "i";
+          document.getElementById("name3").value = "4";
+          document.getElementById("name4").value = "1";
+          
+        } 
+    </script>
+
+
+<form action="T_Arrays.html">
+    <br><input type="submit" value="Next" color = "yellow" align="center" >
+  </form> 
+
+</body>
+</html>

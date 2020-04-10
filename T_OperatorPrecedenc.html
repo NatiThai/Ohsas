@@ -1,0 +1,116 @@
+<!DOCTYPE html><!--7-->>
+<html>
+<head>
+<style>
+body {
+  background-color: lightblue;
+}
+
+h1 {
+  color: rgb(8, 8, 8);
+  text-align: center;
+}
+
+p {
+  font-family: verdana;
+  font-size: 15px;
+  text-indent: 50px;
+}
+
+input[type="submit"]{
+    padding: 10px 25px 8px;
+    color: cornsilk;
+    background-color: darkblue;
+    text-shadow: 0 1px 0 rgba(0,0,0,25);
+    font-size: 16px;
+    box-shadow:rgba(255, 255, 255, .25) 0 2px 0 0 inset darkgray;
+    border: 1px solid #024978;
+    border-radius: 2px;
+    margin-top: 10px;
+    cursor: pointer;
+    
+}
+button{
+    color: black;
+    background-color: yellow;
+}
+
+</style>
+</head>
+<body>
+    <h1>Operator Precedenc</h1>
+<p>ลำดับในการดำเนินการ เช่น ถ้า มี คูณกับบวก 5+6*3 คอมจะทำเครื่องหมายไหนก่อนกันนะ?<br>
+    <br>
+    ลำดับที่คอมจะทำการกับตัวดำเนินการเป็นดังนี้<br>
+    หาร /<br>
+    คูณ *<br>
+    บวก + ,ลบ -<br>
+    <br>
+    ดังนั้น 5+6*3 <br>
+    = 6*3 = 18 <br>
+    จะได้  5 + 18 = 23<br>
+    <br>
+    
+    ถ้า 5 * (6-4) ถ้ามีวงเล็บต้องทำในวงเล็บก่อนนะคับ<br>
+    = 5 * 2<br>
+    = 10<br>
+    </p>
+
+    ลองทำกันดูสิครับ<br>
+    a ,b ,c ,d ,e = 5 , 6 ,7 ,15 ,9 (ตอบเป็นทศนิยม 2 ตำแหน่งนะครับ)<br>
+    <br>
+    a+b*c/e =
+    <p1><input type="text" id="name" name="fname" value="" size = "5" style="text-align: center;">
+        </p1><br>
+    a/(b*b)+e = 
+    <p1><input type="text" id="name2" name="fname" value="" size = "5" style="text-align: center;">
+        </p1><br>
+    e**a+c-d *a =
+    <p1><input type="text" id="name3" name="fname" value="" size = "5" style="text-align: center;">
+        </p1><br>
+    d//a+b-d =
+    <p1><input type="text" id="name4" name="fname" value="" size = "5" style="text-align: center;">
+        </p1><br>
+    a+b-c*d/e =
+    <p1><input type="text" id="name5" name="fname" value="" size = "5" style="text-align: center;">
+        </p1><br>
+        <br>
+        <button onclick="myFunction()">Submit</button>    
+        <button onclick="myFunction2()">Show Answer</button> 
+        <br><p3 id = "check"></p3>   
+
+        <script>
+            function myFunction() {
+                var x = document.getElementById("name").value;
+                var y = document.getElementById("name2").value;
+                var z = document.getElementById("name3").value;
+                var a = document.getElementById("name4").value;
+                var b = document.getElementById("name5").value;
+
+                if (x =="9.66" & y == "9.13" & z =="58981"
+                & a == "3" & b == "-0.66") {
+                    document.getElementById("check").innerHTML = "ถูกต้องครับ!"
+                }
+                 else {
+                    document.getElementById("check").innerHTML = "ยังไม่ถูกนะครับ"
+                }
+            } 
+        </script>
+        <script>
+            function myFunction2() {
+              document.getElementById("name").value = "9.66";
+              document.getElementById("name2").value = "9.13";
+              document.getElementById("name3").value = "58981";
+              document.getElementById("name4").value = "3";
+              document.getElementById("name5").value = "-0.66";
+              
+            } 
+        </script>
+
+
+<form action="T_Comparisons.html">
+    <br><input type="submit" value="Next" color = "yellow" align="center" >
+  </form> 
+
+</body>
+</html>

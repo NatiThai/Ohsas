@@ -1,0 +1,122 @@
+<!DOCTYPE html><!--2-->
+<html>
+<head>
+<style>
+body {
+  background-color: lightblue;
+}
+
+h1 {
+  color: rgb(8, 8, 8);
+  text-align: center;
+}
+
+p {
+  font-family: verdana;
+  font-size: 15px;
+  text-indent: 50px;
+}
+
+input[type="submit"]{
+    padding: 10px 25px 8px;
+    color: cornsilk;
+    background-color: darkblue;
+    text-shadow: 0 1px 0 rgba(0,0,0,25);
+    font-size: 16px;
+    box-shadow:rgba(255, 255, 255, .25) 0 2px 0 0 inset darkgray;
+    border: 1px solid #024978;
+    border-radius: 2px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+button{
+    color: black;
+    background-color: yellow;
+}
+
+</style>
+</head>
+<body>
+
+<h1>Comments</h1>
+<p>เอาละครับมาถึงตรงไหนแล้วคุณก็ได้รู้การแสดงข้อความออกทางหน้าจอแล้วต่อไปผมจะสอนเรื่องการทำคอมเม้นกันต่อ ประโยชน์ในการใส่คอมเม้นลงไปในโค้ดจะช่วยให้คุณ
+    จำได้เวลากลับมาดูหรือให้ผู้อื่นมาดูโค้ดของคุณ  
+    คอมเม้นจะมี 2 แบบ คือแบบ บรรทัดเดียวและหลายบรรทัด
+    แบบบรรทัดเดียว จะใช้เครื่องหมาย # เช่น<br>
+    # ข้อความ<br>
+    แบบหลายบรรทัดจะใช้ ''' เช่น<br>
+     ''' ข้อความ<br>
+         ข้อความ<br>
+         ข้อความ '''<br>
+    คอมเม้นแบบหลายบรรทัดจะเขียนแบบนี้ก็ได้นะ """  ข้อความ  """<br></p>
+
+<p1><br>เอาละผมอยากให้คุณเขียนชื่อ-สกุล เพื่อแสดงออกทางหน้าจอ แต่ตรงสกุลให้ใส่คอมเม้นแบบบรรทัดเดียวเอาไว้<br></p1>
+<p1><input type="text" id="fname" name="fname" value="p" size = "5">
+    (<input type="text" id="lname" name="lname"  size = "10">)
+    <input type="text" id="tname" name="tname" value="#" size = "10"></p1>
+<button onclick="myFunction()">Submit</button>    
+<button onclick="myFunction3()">Show Answer</button> 
+<br><p2 id = "check1"></p2>
+
+<br><p1><br>ทีนี้ลองใช้คอมเม้นแบบหลายบรรทัดดู
+    อยากให้โค้ดแสดงแค่ข้อความ python is easy<br></p1>
+<p1><input type="text" id="name" name="***" value="'" size = "5"></p1>    
+<p1><br>print('Hello')<br>
+    print('World')<br>
+    print('Python')<br></p1>
+    <p1><input type="text" id="name2" name="***"  size = "5"></p1>
+<p1><br>print('python is easy')</p1>
+<button onclick="myFunction2()">Submit</button>    
+<button onclick="myFunction4()">Show Answer</button> 
+<br><p3 id = "check2"></p3>
+
+<script>
+    function myFunction() {
+     var x = document.getElementById("fname").value;
+  
+      if(x == "print")
+      {
+        document.getElementById("check1").innerHTML = "ถูกต้องครับ!"
+      }
+      else
+      {
+        document.getElementById("check1").innerHTML = "ยังไม่ถูกนะครับ"
+      }
+    } 
+  </script>
+  <script>
+    function myFunction2() {
+     var x = document.getElementById("name").value;
+     var y = document.getElementById("name2").value;
+  
+      if(x == "'''" & y == "'''")
+      {
+        document.getElementById("check2").innerHTML = "ถูกต้องครับ!"
+      }
+      else
+      {
+        document.getElementById("check2").innerHTML = "ยังไม่ถูกนะครับ"
+      }
+    } 
+  </script>
+  <script>
+    function myFunction3() {
+      document.getElementById("fname").value = "print";
+      document.getElementById("lname").value = "ชื่อของคุณ";
+      document.getElementById("tname").value = "#นามสกุลของคุณ";
+    } 
+  </script>
+  <script>
+    function myFunction4() {
+      document.getElementById("name").value = "'''";
+      document.getElementById("name2").value = "'''";
+    } 
+  </script>
+
+<form action="T_Indentation.html">
+  <br><input type="submit" value="Next" color = "yellow">
+</form> 
+
+
+</body>
+</html>

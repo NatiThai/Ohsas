@@ -1,0 +1,112 @@
+<!DOCTYPE html> <!--4-->
+<html>
+<head>
+<style>
+body {
+  background-color: lightblue;
+}
+
+h1 {
+  color: rgb(8, 8, 8);
+  text-align: center;
+}
+
+p {
+  font-family: verdana;
+  font-size: 15px;
+  text-indent: 50px;
+}
+
+input[type="submit"]{
+    padding: 10px 25px 8px;
+    color: cornsilk;
+    background-color: darkblue;
+    text-shadow: 0 1px 0 rgba(0,0,0,25);
+    font-size: 16px;
+    box-shadow:rgba(255, 255, 255, .25) 0 2px 0 0 inset darkgray;
+    border: 1px solid #024978;
+    border-radius: 2px;
+    margin-top: 10px;
+    cursor: pointer;
+    
+}
+button{
+    color: black;
+    background-color: yellow;
+}
+
+</style>
+</head>
+<body>
+    <h1>Variables </h1>
+    <p>มาถึงเรื่องการสร้างตัวแปรในภาษาไพธอนกันนะครับ ในภาษาไพธอนไม่ยุ่งยากในการสร้างตัวแปร เช่น
+        a = 10 ตัวแปร a จะกลายเป็นตัวแปรประเภท intiger(เก็บค่าเป็นตัวเลข)ทันที เมื่อเทียบกับภาษาซีแล้ว จะเป็น int a = 10;
+        b = 10.5  ตัวแปร b จะกลายเป็นตัวแปรประเภท float(เก็บค่าเป็นตัวเลขทศนิยม)ทันที เมื่อเทียบกับภาษาซีแล้ว จะเป็น float b = 10.5;
+        c = 'Hello Python' c เป็นตัวแปรประเภท String เพราะเก็บค่าเป็นชุดตัวอักษร</p>
+    <br>
+    <p1>ตัวอย่าง<br>
+        a = 10<br>
+        print(a)<br>
+        b = 10.5<br>
+        print(b)<br>
+        c = 'Hello Python'<br>
+        print(c)<br></p1>
+    <br>
+    <p1>การสร้างตัวแปรนั้นต้องไม่ใช้ตัวเลขนำหน้าและตัวอักษรพิมพ์ใหญ่พิมพ์เล็กเป็นคนละตัวกัน<br>
+        เช่น<br>
+        name<br>
+        Name<br>
+        name1<br>
+        NaMe123<br>
+        และการประกาศตัวแปรแบบผิด เช่น<br>
+        1name<br>
+        123n<br>
+        1n2d<br></p1>
+    <br>
+    <p1>ทั้งนี้หากอยากรู้ว่าตัวแปรไหนเป็นชนิดใดให้ใช้คำสั่ง type<br>
+        เช่น<br>
+        a = 10<br>
+        print(type(a))<br>
+        <br>
+        ทีนี้ผมอยากให้คุณลองประกาศตัวแปรหรือสร้างตัวแปร 3 ตัวแปรโดยให้ number เป็นเลขจำนวนเต็ม        
+        pieR เป็น เลขทศนิยม และ name เป็น สตริง<br></p1>
+       
+        <p1><input type="text" id="iname" name="fname" value="" size = "5">
+            = 10<br></p1>
+        <br><p1><input type="text" id="fname" name="fname" value="" size = "5">
+            = 10.5<br></p1>
+        <br><p1><input type="text" id="sname" name="fname" value="" size = "5">
+            = "Messenger"<br></p1>
+        <br>
+        <button onclick="myFunction()">Submit</button>    
+        <button onclick="myFunction2()">Show Answer</button> 
+        <br><p3 id = "check"></p3>   
+        <script>
+            function myFunction() {
+                var x = document.getElementById("iname").value;
+                var y = document.getElementById("fname").value;
+                var z = document.getElementById("sname").value;
+
+                if (x =="number" & y == "pieR" & z =="name") {
+                    document.getElementById("check").innerHTML = "ถูกต้องครับ!"
+                }
+                 else {
+                    document.getElementById("check").innerHTML = "ยังไม่ถูกนะครับ"
+                }
+            } 
+        </script>
+        <script>
+            function myFunction2() {
+              document.getElementById("iname").value = "number";
+              document.getElementById("fname").value = "pieR";
+              document.getElementById("sname").value = "name";
+            } 
+        </script>
+
+
+<form action="T_SimpleOperators.html">
+    <br><input type="submit" value="Next" color = "yellow"  >
+  </form> 
+
+</body>
+</html>

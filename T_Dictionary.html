@@ -1,0 +1,140 @@
+<!DOCTYPE html><!--13-->
+<html>
+<head>
+<style>
+body {
+  background-color: lightblue;
+}
+
+h1 {
+  color: rgb(8, 8, 8);
+  text-align: center;
+}
+
+p {
+  font-family: verdana;
+  font-size: 15px;
+  text-indent: 50px;
+}
+
+input[type="submit"]{
+    padding: 10px 25px 8px;
+    color: cornsilk;
+    background-color: darkblue;
+    text-shadow: 0 1px 0 rgba(0,0,0,25);
+    font-size: 16px;
+    box-shadow:rgba(255, 255, 255, .25) 0 2px 0 0 inset darkgray;
+    border: 1px solid #024978;
+    border-radius: 2px;
+    margin-top: 10px;
+    cursor: pointer;
+    
+}
+button{
+    color: black;
+    background-color: yellow;
+}
+
+</style>
+</head>
+<body>
+<h1>Dictionary</h1>
+<p>Dictionary คือประเภทข้อมูลที่เก็บข้อมูลในรูปแบบคู่ ซึ่งจะเป็นรูปแบบเป็น  key: value     <br>                                                           
+    เช่น    <br> 
+    d = {}                      # empty dict<br> 
+    d = {'key': 'value'}   # dict with initial values <br> 
+    <br> 
+    เช่น                             <br>                               
+    a= {1: 'One', 2: 'Two', 3: 'Three'}      <br>                                                           
+    b= {'One' : 1,'Two' : 2, 'Three' : 3 }      <br>                                                           
+    <br>                                
+    จากตัวอย่าง เราได้ประกาศตัวแปร Dictionary ที่มีชื่อว่า a และ b และมี key: value ตามลำดับ  <br>                                                               
+    ซี่ง key ใช้เข้าถึงข้อมูลที่เป็น value และ key เป็นได้ทั้ง String และ int            <br>                                                     
+    <br>                                                                                                     
+    print(b)                      #   {'Two': 2, 'Three': 3, 'One': 1}<br> 
+    print(b['One'])            #     1      <br>                                     
+    print(a.keys())           # dict_keys([1, 2, 3])  <br> 
+    print(a.values())        #  dict_values(['One', 'Two', 'Three'])<br> 
+    <br> 
+    <br>                                              
+    การค้นหาข้อมูลใน dict ด้วย for<br> 
+    for k in a.keys():<br> 
+        print(k, end = ' ')      # 1 2 3     (end = ' ' จะทำให้ผลรันเรียงกันไปด้านข้าง)<br> 
+        <br> 
+    for k in a.values():<br> 
+        print(k, end = ' ')      #  One Two Three <br> 
+        <br> 
+        <br> 
+    การเล่นกับค่าใน ditc เช่น การเพิ่มข้อมูล<br> 
+    a.update({4:'four'})<br> 
+    print(a)              #{1: 'One', 2: 'Two', 3: 'Three', 4: 'four'}<br> 
+    <br> 
+    การแทนที่<br> 
+    a.update({1:'first'})        <br>                                                    
+    print(a)             #{1: 'first', 2: 'Two', 3: 'Three'}   <br>    
+    </p>
+       
+    <p1>นอกจากนี้ ยังมี Methods สำหรับใช้กับ Dictionary อยู่อีกไปลองเล่ยกันได้นะครับ
+        <a href="http://marcuscode.com/lang/python/dictionary" target="_blank">Click here</a>
+        </p1><br>
+        ลองทำดูหน่อยสิครับ<br>
+        จาก<br>
+        a= {1: 'One', 2: 'Two', 3: 'Three'}   <br>                                                             
+        b= {'One' : 1,'Two' : 2, 'Three' : 3 }     <br> 
+        ถ้าอยาก ditc a ว่างจะทำยังไงน่ะ<br>
+        <p1><input type="text" id="name" name="fname" value="" size = "5" ></p1>.clear()
+        <br>print(<p1><input type="text" id="name2" name="fname" value="" size = "5" style="text-align: center;"></p1>)
+        <br><br>
+        
+        ถ้าอยากให้ ditc c มีค่าเหมือนใน ditc b  จะทำไงน่ะ<br>
+        c = <p1><input type="text" id="name3" name="fname" value="" size = "5" style="text-align: center;"></p1>.copy()
+       <br> <p1><input type="text" id="name4" name="fname" value="" size = "5"></p1>(c)
+        <br><br>
+        
+        ถ้าอยากได้ Value
+        ตัวแรกของของ ditc b ใส่ลงในตัวแปร d จะทำยังไงนะ<br>
+        <p1><input type="text" id="name5" name="fname" value="" size = "5"></p1>
+        = b.pop('<p1><input type="text" id="name6" name="fname" value="" size = "5" style="text-align: center;"></p1>')<br>
+        print(d)<br>
+        
+        <button onclick="myFunction()">Submit</button>    
+        <button onclick="myFunction2()">Show Answer</button> 
+        <br><p3 id = "check"></p3>   
+    
+        <script>
+            function myFunction() {
+                var x = document.getElementById("name").value;
+                var y = document.getElementById("name2").value;
+                var z = document.getElementById("name3").value;
+                var a = document.getElementById("name4").value;
+                var b = document.getElementById("name5").value;
+                var c = document.getElementById("name6").value;
+                
+    
+                if (x =="a" & y == "a" & z =="b" & a == "print"
+                & b == "d" & c == "One" ) {
+                    document.getElementById("check").innerHTML = "ถูกต้องครับ!"
+                }
+                 else {
+                    document.getElementById("check").innerHTML = "ยังไม่ถูกนะครับ"
+                }
+            } 
+        </script>
+        <script>
+            function myFunction2() {
+              document.getElementById("name").value = "a" ;
+              document.getElementById("name2").value = "a";
+              document.getElementById("name3").value = "b";
+              document.getElementById("name4").value = "print";
+              document.getElementById("name5").value = "d";
+              document.getElementById("name6").value = "One";
+              
+            } 
+        </script>
+
+<form action="T_List.html">
+    <br><input type="submit" value="Next" color = "yellow" align="center" >
+  </form> 
+
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html><!--17-->
+<html>
+<head>
+<style>
+body {
+  background-color: lightblue;
+}
+
+h1 {
+  color: rgb(8, 8, 8);
+  text-align: center;
+}
+
+p {
+  font-family: verdana;
+  font-size: 15px;
+  text-indent: 50px;
+}
+
+input[type="submit"]{
+    padding: 10px 25px 8px;
+    color: cornsilk;
+    background-color: darkblue;
+    text-shadow: 0 1px 0 rgba(0,0,0,25);
+    font-size: 16px;
+    box-shadow:rgba(255, 255, 255, .25) 0 2px 0 0 inset darkgray;
+    border: 1px solid #024978;
+    border-radius: 2px;
+    margin-top: 10px;
+    cursor: pointer;
+    
+}
+button{
+    color: black;
+    background-color: yellow;
+}
+
+</style>
+</head>
+<body>
+<h1>การรับค่าจาก Keyboard</h1>
+<p>นี้ก็เป็นเรื่องสุดท้ายที่ผมจะสอนคุณแล้วนะครับไปลุยกันเลย
+    นอกจากการแสดงผลแล้วนั้น การติดต่อกับผู้ใช้ในอีกรูปแบบหนึ่งคือการรับค่า โดยทั่วไปแล้วมักจะเป็นการรับค่า      <br>                                          
+    ทางคีย์บอร์ด ในภาษา Python ถ้าพิมพ์แค่ input() จะเป็นการการรับค่าแบบ String           <br>                                     
+    เช่น                                                <br>
+    a = input('กรุณาใส่ชื่อ :') # ข้อความในวงเว็บมีไว้เพื่อบอกให้ user รู้ว่าต้องพิมพ์ค่าจากคีย์บอร์ด  เมื่อใส่ชื่อแล้วให้กด Enter ที่ คีย์บอร์ด   <br>                                                                                           
+    print('hello :',a)     <br>                                                                                           
+    เมื่อเรากรอกชื่อโปรแกรมก็จะแสดงผลเป็นชื่อเราออกมา    <br>                                            
+    <br>    
+    แล้วถ้าอยากได้เป็นinputเป็น integer ละ จะทำยังไง    <br>                                            
+    เช่น                                  <br>              
+    a = int(input('กรุณใส่ค่า: '))         <br>                                       
+    b = a+5                         <br>                       
+    print(b)                       <br>                                                                        
+    จะเห็นได้ว่าถ้าอยากรับค่าเป็น integer ก็แค่ใส่ int นำหน้า input เท่านั้น</p> <br>
+<br>
+    ลองทำดูหน่อยสิครับ<br>
+    ให้รับค่าจากคีย์บอร์ดเป็นเลข 2 ตัว แล้วแสดงผลบวกออกทางหน้าจอหน่อยสิครับ<br>
+    a = int(<p1><input type="text" id="name" name="fname" value="" size = "5" style="text-align: center;"></p1>('input = '))<br>
+    b = <p1><input type="text" id="name2" name="fname" value="" size = "5" style="text-align: center;"></p1>(input('input = '))<br>
+    c = a+b<br>
+    print(c)<br>
+    <br>
+    <br>
+    ให้รับค่าจากคีย์บอร์ดเป็นเลขทศนิยม 2 ตัว  แล้วแสดงผลคูณออกมาทางหน้าจอหน่อยสิครับ<br>
+    a = <p1><input type="text" id="name3" name="fname" value="" size = "5" style="text-align: center;"></p1>(input('input = '))<br>
+    b = float(<p1><input type="text" id="name4" name="fname" value="" size = "5" style="text-align: center;"></p1>('input = '))<br>
+    c = a-b<br>
+    print(c)<br>
+    <br>
+    <br>
+    ให้ a รับค่าจากคีย์บอร์ดเป็นแบบ String เมื่อรันใสค่า 10 ลงไป<br>
+    ให้ b รับค่าจากคีย์บอร์ดเป็นแบบ Integer เมื่อรันใสค่า 15 ลงไป<br>
+    จากนั้นอยากให้ช่วยเปลี่ยน int เป็น String และ เปลี่ยน String เป็น int จังครับ<br>
+    <br>
+    a = <p1><input type="text" id="name5" name="fname" value="" size = "5" style="text-align: center;"></p1>('putvaluesString: ')<br>
+    b = <p1><input type="text" id="name6" name="fname" value="" size = "5" style="text-align: center;"></p1>(input('putvaluesIntiger: '))<br>
+    c = int(a)<br>
+    d = str(b)<br>
+    print('a = ',type(c))<br>
+    print('b = ',type(d))<br>
+    
+        
+        <button onclick="myFunction()">Submit</button>    
+        <button onclick="myFunction2()">Show Answer</button> 
+        <br><p3 id = "check"></p3>   
+    
+        <script>
+            function myFunction() {
+                var x = document.getElementById("name").value;
+                var y = document.getElementById("name2").value;
+                var z = document.getElementById("name3").value;
+                var a = document.getElementById("name4").value;
+                var b = document.getElementById("name5").value;
+                var c = document.getElementById("name6").value;
+        
+                if (x =="input" & y == "int" & z =="float" & a == "input"
+                & b == "input" & c == "int") {
+                    document.getElementById("check").innerHTML = "ถูกต้องครับ!"
+                }
+                 else {
+                    document.getElementById("check").innerHTML = "ยังไม่ถูกนะครับ"
+                }
+            } 
+        </script>
+        <script>
+            function myFunction2() {
+              document.getElementById("name").value = "input" ;
+              document.getElementById("name2").value = "int";
+              document.getElementById("name3").value = "float";
+              document.getElementById("name4").value = "input";
+              document.getElementById("name5").value = "input";
+              document.getElementById("name6").value = "int";
+              
+            } 
+        </script>
+
+<form action="T_Notice.html">
+    <br><input type="submit" value="Next" color = "yellow" align="center" >
+  </form> 
+
+</body>
+</html>

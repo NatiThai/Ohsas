@@ -1,0 +1,131 @@
+<!DOCTYPE html><!--12-->
+<html>
+<head>
+<style>
+body {
+  background-color: lightblue;
+}
+
+h1 {
+  color: rgb(8, 8, 8);
+  text-align: center;
+}
+
+p {
+  font-family: verdana;
+  font-size: 15px;
+  text-indent: 50px;
+}
+
+input[type="submit"]{
+    padding: 10px 25px 8px;
+    color: cornsilk;
+    background-color: darkblue;
+    text-shadow: 0 1px 0 rgba(0,0,0,25);
+    font-size: 16px;
+    box-shadow:rgba(255, 255, 255, .25) 0 2px 0 0 inset darkgray;
+    border: 1px solid #024978;
+    border-radius: 2px;
+    margin-top: 10px;
+    cursor: pointer;
+    
+}
+button{
+    color: black;
+    background-color: yellow;
+}
+
+</style>
+</head>
+<body>
+<h1>Arrays</h1>
+<p>มาถึงตัวแปรที่เก็บค่าเป็นแบบ arrays กันบ้างนะครับ ซึ่งที่ผมจะสอนเป็นอาเรย์ 1 มิตินะครับ<br>
+    <br>
+    a = [1,2,3,4,5,6]<br>
+    print(a)    #[1,2,3,4,5,6]<br>
+    ตัวแปร a เก็บค่าเเบบอาเรย์ มีทั้งหมด 6 ตัว มีลำดับเป็น 0 ถึง 5<br>
+    <br>
+    print(a[2])    #3<br>
+    print(a[2:5])  #[3, 4, 5]   เอาตั้งแต่ลำดับที่ 2 ถึง 5(ไม่นับ5)<br>
+    print(a[2:])   #[3, 4, 5, 6]   เอาตั้งแต่ 2 จนครบ<br>
+    print(a[:3])   #[1, 2, 3]      เอาตั้งแต่เเรกถึง 3<br>
+    print(a[-2])   #5   เป็นการไล่ลำดับจากหลังมาหน้า<br>
+    print(a[-1])    #6<br>
+    print( len(a) ) #6 เป็นการนับจำนวนข้อมูลใน a<br>
+    a[2] = 10 <br>
+    print(a)      #[1, 2, 10,4, 5, 6]     เป็นการแทน 10 ลงไปใน a ตรงลำดับข้อมูลที่ 2<br>
+    <br>
+    มาถึงการเล่นกับข้อมูลในอาเรย์กันบ้าง<br>
+    a.append(7)<br>
+    print(a)   #[1, 2, 3, 4, 5, 6, 7]   เพิ่ม 7 เข้ามา<br>
+    a.remove(7)<br>
+    print(a)   #[1,2,3,4,5,6]    นำ 7 ออกจาก a<br>
+    <br>
+    b = a.pop(3)<br>
+    print(b)        # 4       เป็นการนำข้อมูลลำดับที่ 3 ของ a ไปใส่ใน b<br>
+    print(a)        #[1, 2, 3, 5, 6] <br>
+    </p>
+    <p1>ยังมีคำสั่งอื่นๆอีกนะครับลองไปศึกษาดูเล่นกันได้
+        <a href="http://www.booboohome.com/2019/06/python-array/" target="_blank">Click here</a>
+        </p1>
+<br><br>ลองถามทำดูหน่อยสิครับ<br>
+b = [1,2,3,5,6,'hello','python']<br>
+ถ้าอยากเปลี่ยนคำว่า hello เป็น handsome จะทำยังไงนะ<br>
+<p1><input type="text" id="name" name="fname" value="" size = "5" ></p1>
+[<p1><input type="text" id="name2" name="fname" value="" size = "5" style="text-align: center;"></p1>]
+= '<p1><input type="text" id="name3" name="fname" value="" size = "5" style="text-align: center;"></p1>'
+<br>print(b)<br><br>
+อยากเพิ่มเลข 7,8,9 ลงไปใน b ได้ยังไงนะ<br>
+b.<p1><input type="text" id="name4" name="fname" value="" size = "5" style="text-align: center;"></p1>(7)<br>
+b.<p1><input type="text" id="name5" name="fname" value="" size = "5" style="text-align: center;"></p1>(8)<br>
+b.append(<p1><input type="text" id="name6" name="fname" value="" size = "5" style="text-align: center;"></p1>)<br>
+print(b)<br>
+<br>
+อยากเพิ่มคำว่า haha ใน b ตรงลำดับที่ 5 จะทำยังไงน่ะ<br>
+b.insert(5,'<p1><input type="text" id="name7" name="fname" value="" size = "5" style="text-align: center;"></p1>')   
+    #(ลำดับ , คำที่อยากเพิ่ม)<br>
+print(b)<br>
+
+
+    <button onclick="myFunction()">Submit</button>    
+    <button onclick="myFunction2()">Show Answer</button> 
+    <br><p3 id = "check"></p3>   
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("name").value;
+            var y = document.getElementById("name2").value;
+            var z = document.getElementById("name3").value;
+            var a = document.getElementById("name4").value;
+            var b = document.getElementById("name5").value;
+            var c = document.getElementById("name6").value;
+            var d = document.getElementById("name7").value;
+
+            if (x =="b" & y == "5" & z =="handsome" & a == "append"
+            & b == "append" & c == "9" & d == "haha") {
+                document.getElementById("check").innerHTML = "ถูกต้องครับ!"
+            }
+             else {
+                document.getElementById("check").innerHTML = "ยังไม่ถูกนะครับ"
+            }
+        } 
+    </script>
+    <script>
+        function myFunction2() {
+          document.getElementById("name").value = "b" ;
+          document.getElementById("name2").value = "5";
+          document.getElementById("name3").value = "handsome";
+          document.getElementById("name4").value = "append";
+          document.getElementById("name5").value = "append";
+          document.getElementById("name6").value = "9";
+          document.getElementById("name7").value = "haha";
+        } 
+    </script>
+
+
+<form action="T_Dictionary.html">
+    <br><input type="submit" value="Next" color = "yellow" align="center" >
+  </form> 
+
+</body>
+</html>
